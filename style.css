@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  background-color: #be3144;
+}
+
+nav ul li a {
+  width: 100%;
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: #5a6074;
+}
