@@ -68,7 +68,42 @@ nav ul li a:hover {
   text-align: center;
 }
 .projects {
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   flex-flow: column nowrap;
+}
+
+.projects article {
+  border: 2px solid pink;
+  flex: 1 1 100%;
+  margin: 1%;
+}
+
+article img {
+  border: 1px solid red;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+article a {
+  display: block;
+  width: 100%;
+  background-color: #303841;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+article a:hover::before {
+  content: "<";
+  color: #d96f32;
+}
+
+article a:hover::after {
+  content: "/>";
+  color: #d96f32;
 }
