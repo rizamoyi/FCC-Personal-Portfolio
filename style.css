@@ -11,6 +11,7 @@ html {
 body {
   margin: 0;
   height: 100vh;
+  font-family: "Quicksand", sans-serif;
 }
 
 h1 {
@@ -53,7 +54,6 @@ nav ul li a:hover {
 
 #welcome-section .welcome {
   text-align: center;
-  border: 1px solid blue;
   width: 90%;
   font-size: 2rem;
 }
@@ -68,6 +68,15 @@ nav ul li a:hover {
   text-align: center;
   padding: 3rem 0;
 }
+
+#projects h2 {
+  width: 95%;
+  margin: 0 auto;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
 .projects {
   padding: 1rem;
   display: flex;
@@ -78,8 +87,26 @@ nav ul li a:hover {
 .projects article {
   flex: 1 1 100%;
   margin: 1%;
+  margin-bottom: 1rem;
+}
+button {
+  border: none;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  background-color: #303841;
+  color: white;
+  border-radius: 2px;
 }
 
+button::after {
+  content: ">";
+  margin-left: 0.5rem;
+}
+
+button:hover {
+  background-color: #be3144;
+}
 article img {
   width: 100%;
   margin: 0;
@@ -117,6 +144,10 @@ article a:hover::after {
 #lets-talk article {
   text-align: center;
 }
+
+#lets-talk h1 {
+  font-size: 2rem;
+}
 #lets-talk ul {
   list-style: none;
   margin: 0;
@@ -134,8 +165,41 @@ article a:hover::after {
   padding: 0.5rem 1rem;
 }
 
+.icon::before {
+  display: inline-block;
+  padding-right: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f082";
+  font-weight: 400;
+}
+.github::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
+  font-weight: 400;
+}
+
+.twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  content: "\f099";
+}
+
+.email::before {
+  content: "\f1fa";
+}
+
+.call::before {
+  content: "\f3cd";
+}
+
 /* footer */
 footer {
+  color: white;
   border-top: 1px solid #be3144;
   background-color: #303841;
   text-align: right;
