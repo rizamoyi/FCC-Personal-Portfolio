@@ -1,3 +1,9 @@
+:root {
+  --main-white: white;
+  --main-grey: #303841;
+  --main-red: #be3144;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -22,7 +28,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid #303841;
+  border-bottom: 1px solid var(--main-grey);
 }
 /* nav-bar */
 nav ul {
@@ -31,18 +37,18 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   padding: 1rem;
-  background-color: #be3144;
+  background-color: var(--main-red);
 }
 
 nav ul li a {
   width: 100%;
   text-decoration: none;
   padding: 1rem;
-  color: white;
+  color: var(--main-white);
 }
 
 nav ul li a:hover {
-  background-color: #5a6074;
+  background-color: var(--main-grey);
 }
 
 /* Welcome section */
@@ -56,7 +62,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: white;
+  color: var(--main-white);
 }
 
 #welcome-section .welcome {
@@ -65,7 +71,7 @@ nav ul li a:hover {
   font-size: 2rem;
 }
 .welcome p {
-  color: #be3144;
+  color: var(--main-red);
   font-size: 1.5rem;
 }
 
@@ -77,10 +83,10 @@ nav ul li a:hover {
 }
 
 #projects h2 {
-  width: 95%;
+  width: 70%;
   margin: 0 auto;
-  color: white;
-  border-bottom: 1px solid white;
+  color: var(--main-white);
+  border-bottom: 1px solid var(--main-white);
   padding-bottom: 1rem;
   font-size: 2rem;
 }
@@ -98,10 +104,11 @@ nav ul li a:hover {
 button {
   border: none;
   padding: 0.5rem 2rem;
+  font-family: "Quicksand", sans-serif;
   cursor: pointer;
   transition: background-color 0.5s ease;
-  background-color: #303841;
-  color: white;
+  background-color: var(--main-grey);
+  color: var(--main-white);
   border-radius: 2px;
 }
 
@@ -111,7 +118,7 @@ button::after {
 }
 
 button:hover {
-  background-color: #be3144;
+  background-color: var(--main-red);
 }
 article img {
   width: 100%;
@@ -123,8 +130,8 @@ article img {
 article a {
   display: block;
   width: 100%;
-  background-color: #303841;
-  color: white;
+  background-color: var(--main-grey);
+  color: var(--main-white);
   font-size: 1rem;
   padding: 1rem;
   text-decoration: none;
@@ -141,9 +148,9 @@ article a:hover::after {
 }
 /* Lets talk section */
 #lets-talk {
-  background-color: #303841;
-  color: white;
-  border-bottom: 2px solid #be3144;
+  background-color: var(--main-grey);
+  color: var(--main-white);
+  border-bottom: 2px solid var(--main-red);
   padding: 15%;
 }
 
@@ -164,7 +171,7 @@ article a:hover::after {
 }
 
 #lets-talk ul li a {
-  color: white;
+  color: var(--main-white);
   text-decoration: none;
   display: block;
   padding: 0.5rem 1rem;
@@ -204,9 +211,9 @@ article a:hover::after {
 
 /* footer */
 footer {
-  color: white;
-  border-top: 1px solid #be3144;
-  background-color: #303841;
+  color: var(--main-white);
+  border-top: 1px solid var(--main-red);
+  background-color: var(--main-grey);
   text-align: right;
   padding: 2rem;
 }
@@ -216,7 +223,6 @@ footer {
   .projects {
     flex-flow: row wrap;
   }
-
   .projects article {
     flex: 0 0 48%;
   }
@@ -225,11 +231,11 @@ footer {
 /* desktop devices */
 @media only screen and (min-width: 992px) {
   .projects {
-    flex-flow: row wrap;
-    background-color: green;
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .projecs article {
-    flex: 0 0 25%;
+  .projects article {
+    flex: 0 0 31%;
   }
 }
